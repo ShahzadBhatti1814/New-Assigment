@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="index.css">
 </head>
 </head>
 <body>
+    <div>
     <div class="container">
         <h1>Weather Api</h1>
         <form id="weather-form">
@@ -20,8 +22,46 @@
             <p id="humidity"></p>
         </div>
     </div>
+    </div>
+    <footer>
+        <hr>
+        <div class="weather forecast">
+            <article class="weather_forecast_item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3LyJnBty9Hqdbb5GFhKaplSPept6YFzQcw&s" alt="clear sky" class="weather_forecast_icon">
+            <h3 class="weather_forecast_day">Mon</h3>
+            <p class="weather_forecast_temperature"><span class="value"> 27</span>&deg;C</p>
+        </article>
+          
+        <article class="weather_forecast_item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3LyJnBty9Hqdbb5GFhKaplSPept6YFzQcw&s" alt="clear sky" class="weather_forecast_icon">
+            <h3 class="weather_forecast_day">Tue</h3>
+            <p class="weather_forecast_temperature"><span class="value"> 24</span>&deg;C</p>
+        </article>
 
+        <article class="weather_forecast_item">
+            <img src="https://cdn-icons-png.flaticon.com/512/831/831682.png" alt="clear sky" class="weather_forecast_icon">
+            <h3 class="weather_forecast_day">Wen</h3>
+            <p class="weather_forecast_temperature"><span class="value"> 30</span>&deg;C</p>
+        </article>
+        <article class="weather_forecast_item">
+            <img src="https://cdn-icons-png.flaticon.com/512/831/831682.png" alt="clear sky" class="weather_forecast_icon">
+            <h3 class="weather_forecast_day">Thu</h3>
+            <p class="weather_forecast_temperature"><span class="value"> 34</span>&deg;C</p>
+        </article>
+        <article class="weather_forecast_item">
+            <img src="https://cdn-icons-png.flaticon.com/512/831/831682.png" alt="clear sky" class="weather_forecast_icon">
+            <h3 class="weather_forecast_day">friday</h3>
+            <p class="weather_forecast_temperature"><span class="value"> 40</span>&deg;C</p>
+        </article>
+        <article class="weather_forecast_item">
+            <img src="https://d1nhio0ox7pgb.cloudfront.net/_img/v_collection_png/512x512/shadow/cloud_sun.png" alt="clear sky" class="weather_forecast_icon">
+            <h3 class="weather_forecast_day">sat</h3>
+            <p class="weather_forecast_temperature"><span class="value"> 30</span>&deg;C</p>
+        </article>
+        </div>
+</footer>
     <script src="index.js"></script>
+    <script src="init.js"></script>
     
 </body>
 </html>

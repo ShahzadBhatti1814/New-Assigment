@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: #007bff;
+    margin-top: 20px;
+}
+#weather-info {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    padding: 20px;
+    margin-top: 20px;
+}
+p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+@media (max-width: 600px) {
+    #weather-info {
+        width: 90%;
+        padding: 15px;
+    }
+    p {
+        font-size: 16px;
+    }
+
+/*body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://media.istockphoto.com/id/1156400081/photo/threatening-storm-clouds-over-farmland.jpg?s=612x612&w=0&k=20&c=txuclZlNpib9gkLkPpILgcFvVKct2qEi0lBggaEKFO0=');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-image: url("https://bradentongulfislands.com/wp-content/uploads/20220411164422-emerson-small.jpg");
+    background-size: cover;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 1100px;
+    height: 600px;
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 280px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#weather-result {
+    margin-top: 60px;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    color: black;
+    border-radius: 4px;
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens 
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+}
+
+.footer-icon {
+    height: 40px;
+    width: 40px;
+}
+
+.footer-item span {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* Responsive Design *
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+}*/

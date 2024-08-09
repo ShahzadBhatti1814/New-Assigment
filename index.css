@@ -1,54 +1,113 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-image: url('https://media.istockphoto.com/id/1156400081/photo/threatening-storm-clouds-over-farmland.jpg?s=612x612&w=0&k=20&c=txuclZlNpib9gkLkPpILgcFvVKct2qEi0lBggaEKFO0=');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
 
 .container {
-    text-align: center;
-    background-color: #fff;
+    background-image: url("https://bradentongulfislands.com/wp-content/uploads/20220411164422-emerson-small.jpg");
+    background-size: cover;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    margin-bottom: 20px;
-}
-
-form {
-    margin-bottom: 20px;
+    width: 1100px;
+    height: 600px;
+    text-align: center;
 }
 
 input {
+    align-items: center;
+    justify-content: center;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+    margin-right: 10px;
+    border: 1px;
+    border-radius: 4px;
+    width: 180px; 
+    background-color: transparent;
+    color: white; 
+    font-size: 26px;
+}
+
+input::placeholder {
+    color:black; 
 }
 
 button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 5px;
+    padding: 10px;
+    border: 1px;
+    background-color: transparent; 
+    color:white; 
+    border-radius: 4px;
     cursor: pointer;
+    width: 100px; 
     font-size: 16px;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #f0f0f0; 
 }
 
 #weather-result {
-    margin-top: 20px;
+    margin-top: 40px; 
 }
 
-#weather-result p {
-    font-size: 18px;
+
+#weatherResult {
+    margin-top: 100px;
+}
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    color: black;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 83%;
+    text-align: center;
+}
+
+.weather.forecast {
+    text-align: center;
+    justify-content: center;
+    display: flex; 
+    overflow-x: auto; 
+    gap: 50px; 
+    padding: 10px; 
+}
+
+.weather_forecast_item {
+    height: 110px; 
+    width: 110px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #ddd; 
+    border-radius: 8px; 
+    padding: 5px; 
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2); 
+    background-color: #fff; 
+}
+
+.weather_forecast_icon {
+    height: 60px; 
+    width: 60px; 
+}
+
+.weather_forecast_day,
+.weather_forecast_temperature {
+    margin: 2px 0; 
+    font-size: 12px; 
 }
